@@ -1,7 +1,7 @@
 import PopUp from "./popup.js";
 import GameBuilder from "./game.js";
 
-const WITHSTAND__TIME = 5;
+const WITHSTAND__TIME = 10;
 const APPEAR__SPEED = 1200;
 
 const game = new GameBuilder()
