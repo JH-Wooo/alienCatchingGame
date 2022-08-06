@@ -54,14 +54,23 @@ body {
 .game__level {
   margin-top: 10px;
   border: 3px solid black;
-  width: 60px;
+  width: 100px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 20px;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
+  line-height: 25px;
   background-color: rgb(238, 209, 113);
 }
-
+.game__level span:first-child {
+  display: block;
+  font-weight: 700;
+}
+.game__level span:last-child {
+  font-size: 23px;
+  font-weight: 540;
+  color: rgb(224, 135, 0);
+}
 .game__field {
   width: 100%;
   height: 100%;
@@ -73,13 +82,15 @@ body {
   width: 400px;
   height: 200px;
   padding: 20px;
-  background-color: #00000090;
+  background-color: #00000095;
   border-radius: 20px;
   color: white;
   text-align: center;
   transform: translateY(-150%);
 }
-
+.pop-up--hidden {
+  display: none;
+}
 .pop-up__refresh {
   width: 60px;
   height: 60px;
@@ -97,18 +108,22 @@ body {
 
 /**/
 .alien {
+  position: absolute;
   width: 80px;
   height: 80px;
   animation: alienBig 2s;
+  cursor: pointer;
 }
 
 @keyframes alienBig {
   from {
+    filter: opacity(0.5) drop-shadow(0 0 0 #ff0000);
     width: 0px;
     height: 0px;
   }
   to {
     width: 80px;
     height: 80px;
+    filter: opacity(1);
   }
 }
