@@ -67,8 +67,8 @@ body {
   font-weight: 700;
 }
 .game__level span:last-child {
-  font-size: 23px;
-  font-weight: 540;
+  font-size: 26px;
+  font-weight: 570;
   color: rgb(224, 135, 0);
 }
 .game__field {
