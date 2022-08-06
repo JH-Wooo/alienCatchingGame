@@ -5,7 +5,7 @@
 
 ---
 
-- ## [게임링크](https://memore2.github.io/alienCatchingGame/){:target="\_blank"}
+- ## <a href="https://memore2.github.io/alienCatchingGame/" target="_blank">게임 링크</a>
 
 ---
 
@@ -44,6 +44,6 @@
 ## 🏀 **개선하고 싶은 점**
 
 - ### canvas를 사용해 보다 동적인 움직임을 가지고 싶음.
-- ### 음소거 기능을 삽입.
-- ### UI 좀 더 이쁘게 작성.
+- ### 음소거 기능을 만들기.
+- ### UI 개선.
 - ### 외계인이 못생겨서 좀 바꿔야 할 듯.
