@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #fbeaff;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 900px;
+  height: 600px;
+  background: url(img/bg.png) center/cover;
+  border-radius: 10px;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.game__button {
+  background-color: rgb(252, 239, 64);
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  border: 4px solid black;
+  font-size: 24px;
+}
+
+.game__button:hover {
+  transform: scale(1.1);
+}
+.game__timer {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: bisque;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.game__level {
+  margin-top: 10px;
+  border: 3px solid black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(238, 209, 113);
+}
+
+.game__field {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.pop-up {
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  background-color: #00000090;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transform: translateY(-150%);
+}
+
+.pop-up__refresh {
+  width: 60px;
+  height: 60px;
+  background-color: azure;
+  border-radius: 20px;
+}
+.pop-up__refresh:hover {
+  transform: scale(1.1);
+}
+.pop-up__message {
+  display: block;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+/**/
+.alien {
+  width: 80px;
+  height: 80px;
+  animation: alienBig 2s;
+}
+
+@keyframes alienBig {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+  }
+}
